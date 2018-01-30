@@ -1,4 +1,5 @@
 import React from 'react'
+import styles from './counter.scss'
 
 export class Counter extends React.Component {
   constructor(props) {
@@ -17,7 +18,7 @@ export class Counter extends React.Component {
   render() {
     return (
       <div>
-        <div>COUNT: {this.state.count}</div>
+        <div className={styles.number}>COUNT: {this.state.count}</div>
         <div><input type="button" value="COUNT UP" onClick={() => this.handleClick()} /></div>
       </div>
     )
